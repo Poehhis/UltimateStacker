@@ -10,25 +10,12 @@ public class CollisionHandler : MonoBehaviour {
 	void Start () {
         //gamecontrols = GetComponent<GameControls>();
         
-        //Set object scale
-        gameObject.transform.localScale = new Vector3(Random.Range(0.2f,3.0f), Random.Range(0.3f, 3.0f), Random.Range(0.2f, 3.0f));
-
-        //Set material color
-        //Fetch the Renderer from the GameObject
-        Renderer rend = GetComponent<Renderer>();
-
-        //Set the main Color of the Material to green
-        rend.material.shader = Shader.Find("_Color");
-        rend.material.SetColor("_Color", Color.green);
-        
-        //Find the Specular shader and change its Color to red
-        rend.material.shader = Shader.Find("Specular");
-        rend.material.SetColor("_SpecColor", Color.red);
+       
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collided");
+        //Debug.Log("Collided");
         hit = true;   
     }
 

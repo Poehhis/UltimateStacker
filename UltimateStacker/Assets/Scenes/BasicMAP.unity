@@ -443,10 +443,12 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669908}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,8 +468,8 @@ Camera:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.12276179, g: 0.070398726, b: 0.13207549, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -522,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c913c20af2e44d95383863e3d1e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floor: {fileID: 1184078839}
   object1: {fileID: 401359760}
   object2: {fileID: 885537606}
   object3: {fileID: 46947712}
@@ -529,6 +532,58 @@ MonoBehaviour:
   object5: {fileID: 1372477734}
   objNmbr: 1
   first: 1
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb0921178c6a99499bf0894b70df05b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 401359760}
+  object2: {fileID: 885537606}
+  object3: {fileID: 46947712}
+  object4: {fileID: 889007850}
+  object5: {fileID: 1372477734}
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4de32669f713c4698b58e13711d1c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name1: 'aa (Tier2) '
+  name2: aab (Tier3)
+  name3: 'a (Tier1) '
+  name4: 'aa (Tier2) '
+  name5: b (Tier1)
+  k1: 0
+  k2: 0
+  k3: 0
+  k4: 0
+  k5: 0
+  p1: 0
+  p2: 0
+  p3: 0
+  p4: 0
+  p5: 0
+  s1: 0
+  s2: 0
+  s3: 0
+  s4: 0
+  s5: 0
+  kps1: {x: 0, y: 0, z: 0}
+  kps2: {x: 0, y: 0, z: 0}
+  kps3: {x: 0, y: 0, z: 0}
+  kps4: {x: 0, y: 0, z: 0}
+  kps5: {x: 0, y: 0, z: 0}
 --- !u!1 &885537606
 GameObject:
   m_ObjectHideFlags: 0

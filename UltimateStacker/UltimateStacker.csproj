@@ -308,6 +308,8 @@
   <ItemGroup>
     <Compile Include="Assets\skripts\CollisionHandler.cs" />
     <Compile Include="Assets\skripts\GameControls.cs" />
+    <Compile Include="Assets\skripts\ObjectGenerator.cs" />
+    <Compile Include="Assets\skripts\Objects.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
